@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>One-Page Website</title>
     <link rel="stylesheet" href="./CSS/one_page-website.css">
+    <script src="JS/one_page_website.js"></script>
 </head>
 <body>
 
@@ -22,11 +23,18 @@
     <section id="pictures" class="pictures">
         <h2>Our Gallery</h2>
         <div>
-            <img src="dog1.jpg" alt="Image 1">
-            <img src="dog2.jpg" alt="Image 2">
-            <img src="dog3.jpg" alt="Image 3">
+            <img src="img/dog1.jpg" alt="Image 1" data-lightbox="gallery">
+            <img src="img/dog2.jpg" alt="Image 2" data-lightbox="gallery">
+            <img src="img/dog3.jpg" alt="Image 3" data-lightbox="gallery">
         </div>
     </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
 
     <section id="video" class="video">
         <h2>Our Video</h2>
